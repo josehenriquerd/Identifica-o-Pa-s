@@ -8,42 +8,62 @@
     <title>Identificação internacional</title>
   </head>
   <body>
+    
+    <p1>Qual o seu País?</p1>
     <section>
-      <div>
-        <input type="radio" value="india" id="0" name="pais" />
-        <label for="india"> Inglaterra</label><br />
-        <input type="radio" value="EUA" id="1" name="pais" />
-        <label for="EUA">EUA</label><br />
-        <input type="radio" value="paraguai" id="2" name="pais" />
-        <label for="paraguai">paraguai</label><br />
-        <input type="radio" value="argentina" id="3" name="pais" />
-        <label for="argentina">argentia</label><br />
-        <input type="radio" value="mexico" id="4" name="pais" />
-        <label for="mexico">mexico</label><br />
+      <p>
+      <div class="pais">
+        <label><p>Qual o seu país?</p></label>
+        <input type="radio" value="Inglaterra" id="pais" name="pais" />
+        <label for="Inglaterra"> Inglaterra</label><br />
+
+        <input type="radio" value="argentina" id="pais" name="pais" />
+        <label for="argentina">Argentina</label><br />
+
+        <input type="radio" value="mexico" id="pais" name="pais" />
+        <label for="mexico">México</label><br />
+
+        <input type="radio" value="eua" id="pais" name="pais" />
+        <label for="eua">Estados Unidos</label><br />
+
+        <input type="radio" value="china" id="pais" name="pais" />
+        <label for="china">China</label><br />
       </div>
+       </p>
       <div>
-        <input type="radio" value="mulher" id="0" name="sexo" />
-        <label for="feminino">mulher</label>
-        <input type="radio" value="homem" id="1" name="sexo" />
-        <label for="masculino">masculino</label>
+        <p class="p2">qual é o seu sexo?
+        <input type="radio" value="mulher" id="sexo" name="sexo" />
+        <label for="feminino">Mulher</label>
+        <input type="radio" value="homem" id="sexo" name="sexo" />
+        <label for="masculino">Masculino</label>
+      </p>
       </div>
-      <div>
+
+      <div >
+        <label><p class="p2">Qual o seu nome?</label>
         <input
           type="text"
           id="nome"
           name="text"
           placeholder="insira o texto aqui"
         />
+      </p>
       </div>
       <div>
         <input
           type="button"
           value="enviar"
           id="processar"
-          onclick="identificacao()"
-        />
+          class="btn"
+          onclick="identificacao()" />
+      </div>
+      <div class="resultado">
+      </div>
+      <div id="bandeira">
+        
       </div>
     </section>
-    <script src="1.js"></script>
+
+    <script src="teste.js"></script>
   </body>
 </html>
