@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="1.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Identificação internacional</title>
+  </head>
+  <body>
+    <section class="bloco">
+      <section>
+        <div class="barra">
+          <p1>CONSULTA DE PASSAPORTE</p1>
+        </div>
+      </section>
+      <form>
+      <div class="nome">
+      <p class="texto">Qual o seu nome?</p>
+      <div>
+        <input
+          class="caixa"
+          type="text"
+          id="nome"
+          name="text"
+          placeholder="  Insira o texto aqui"
+        />
+      </div>
+      <div class="divisoria"> </div>
+      <p class="texto1">Qual o país?</p>
+    </div>  
+
+      <div class="paises">
+        <table>
+        <tr>
+        <td><input type="radio" value="india" id="pais" name="pais" />
+        <label for="india"> Inglaterra </label><br /></td>
+
+        <td><img src="Inglaterra.png" class="mini"></td>
+        </tr>
+
+        <tr>
+          <td><input type="radio" value="EUA" id="pais" name="pais" />
+        <label for="EUA">EUA</label><br /></td>
+        <td><img src="eua.jpg" class="mini"></td>
+      </tr>
+
+        <tr>
+          <td><input type="radio" value="paraguai" id="pais" name="pais" />
+        <label for="paraguai">Paraguai</label><br /></td>
+        <td><img src="Paraguai.png" class="mini"></td>
+      </tr>
+
+        <tr>
+          <td> <input type="radio" value="argentina" id="pais" name="pais" />
+        <label for="argentina">Argentina</label><br /></td>
+        <td><img src="argentina.png" class="mini"></td>
+      </tr>
+        
+        <tr>
+          <td> <input type="radio" value="mexico" id="pais" name="pais" />
+        <label for="mexico">México </label><br /></td>
+        <td><img src="Mexico.png" class="mini"></td>
+      </tr>
+
+      </table>
+      </div>
+      <div class="divisoria1"> </div>
+      <p class="texto2">Qual o sexo?</p>
+      <div class="sexo">
+        <input type="radio" value="mulher" id="sexo" name="sexo" />
+        <label for="feminino">Feminino</label>
+        <input type="radio" value="homem" id="sexo" name="sexo" />
+        <label for="masculino">Masculino</label>
+       
+      </div>
+      
+      
+      <div>
+        <input
+          type="button"
+          value="enviar"
+          id="processar"
+          onclick="processo()"
+          class="btn"
+        />
+      </form>
+
+      
+      </div>
+    </section1>
+    <section class="resposta">
+      <div id="resposta">
+      </div>
+
+    </section>
+    <script src="1.js"></script>
+  </body>
+</html>
